@@ -1,6 +1,6 @@
 def sum_list(num):
     return sum(num)
-
+# Hello Guys
 def product_list(num):
     product = 1
     for number in num:
@@ -15,7 +15,7 @@ def main():
     inputstring = input("Enter values in the array with a space in between.")
     inputnums = inputstring.split()
 
-    num = []
+    num = [1, 2, 3, 4, 5]
     for item in inputnums:
         num.append(int(item))
 
