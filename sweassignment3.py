@@ -3,6 +3,7 @@ def sum_list(num):
 
 def product_list(num):
     product = 1
+    
     for number in num:
         product *= number
     return product
