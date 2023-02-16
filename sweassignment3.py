@@ -7,9 +7,19 @@ def product_list(num):
         product *= number
     return product
 
+def main():
 
-array = [1, 2, 3, 5, 10]
-sumres = sum_list(array)
-prodres = product_list(array)
-print(sumres)
-print(prodres)
+    inputstring = input("Enter values in the array with a space in between.")
+    inputnums = inputstring.split()
+
+    numbers = []
+    for item in inputnums:
+        numbers.append(int(item))
+
+    sum_result = sum_list(numbers)
+
+    print("Sum: ", sum_result)
+    print("Product: ", product_result)
+
+if __name__ == "__main__":
+    main()
